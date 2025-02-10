@@ -36,15 +36,17 @@
             }
           },
           {
-            "id": "974cdf8830a5b554",
+            "id": "c0b597d1e19f86aa",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.4"
+                "file": "Product Service Notes.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
+              "icon": "lucide-file",
+              "title": "Product Service Notes"
             }
           }
         ],
@@ -190,9 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "974cdf8830a5b554",
+  "active": "c0b597d1e19f86aa",
   "lastOpenFiles": [
     "Spring boot notes.md",
+    "Product Service Notes.md",
+    "Springboot",
     "Welcome.md"
   ]
 }
