@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Spring boot notes"
             }
+          },
+          {
+            "id": "974cdf8830a5b554",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -55,7 +67,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -92,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "413ac830f1d7ce57",
@@ -178,7 +190,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "90c96949b6cbce47",
+  "active": "974cdf8830a5b554",
   "lastOpenFiles": [
     "Spring boot notes.md",
     "Welcome.md"
