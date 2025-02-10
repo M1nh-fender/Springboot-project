@@ -118,3 +118,40 @@ Product product = Product.builder()
 
 ```
 
+## Repo
+---
+``` java
+package com.learning.microservices.product.model;
+
+import com.learning.microservices.product.model.Product;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ProductRepository extends MongoRepository<Product, String> {
+
+}
+```
+
+- **`import org.springframework.data.mongodb.repository.MongoRepository;`**:  
+    This imports the **`MongoRepository`** interface from **Spring Data MongoDB**. **`MongoRepository`** provides built-in methods to interact with MongoDB, like **save, find, delete, etc.**, without having to write any SQL queries.
+
+By extending **`MongoRepository<Product, String>`**, the **`ProductRepository`** automatically inherits several methods from the **`MongoRepository`** interface to interact with the MongoDB database, such as:
+
+- **`save(Product product)`**: Saves a `Product` to the database.
+- **`findById(String id)`**: Finds a `Product` by its `id`.
+- **`delete(Product product)`**: Deletes a `Product` from the database.
+- **`findAll()`**: Retrieves all `Product` documents from the database.
+
+- basically free CRUD stuff
+
+- You don’t need to provide the **implementation** for these methods yourself. Spring Data MongoDB will automatically generate the implementation at runtime for you.
+- You just **define the interface** and Spring handles the database interaction for you.
+
+
+#### **Separation of Concerns**:
+
+- The **repository layer** separates **data access logic** from the rest of your application (like business logic in the service layer).
+- This makes your code easier to manage, **test**, and **maintain** because each layer has a specific responsibility:
+    - **Controller Layer**: Handles HTTP requests and responses.
+    - **Service Layer**: Contains business logic.
+    - **Repository Layer**: Handles interactions with the database.
